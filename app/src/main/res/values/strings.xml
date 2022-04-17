@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Rick&amp;Morty</string>
+    <string name="char_name_label">Имя:</string>
+    <string name="char_name_placeholder">Morty Smith</string>
+    <string name="char_gender_label">Пол:</string>
+    <string name="char_gender_placeholder">male</string>
+    <string name="char_species_label">Раса:</string>
+    <string name="char_species_placeholder">Human</string>
+    <string name="char_status_label">Статус:</string>
+    <string name="char_status_placeholder">Dead</string>
+    <string name="char_location_label">Местоположение:</string>
+    <string name="char_location_placeholder">Earth</string>
+    <string name="char_episodes_count_label">Количество эпизодов:</string>
+    <string name="char_episodes_count_placeholder">5</string>
+    <string name="chars_list_label">Персонажи сериала:</string>
+</resources>

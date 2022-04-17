@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/blueDark">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="10dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="60dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="110dp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/char_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/morty501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/char_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/char_name_label"
+            style="@style/AppTheme.Text.Light.Small"
+            app:layout_constraintStart_toStartOf="@id/one"
+            app:layout_constraintTop_toBottomOf="@id/char_image" />
+
+        <TextView
+            android:id="@+id/char_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/char_name_placeholder"
+            style="@style/AppTheme.Text.Light.Small"
+            app:layout_constraintStart_toStartOf="@id/one"
+            app:layout_constraintTop_toBottomOf="@id/char_name_label" />
+
+        <TextView
+            android:id="@+id/char_gender_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/char_gender_label"
+            style="@style/AppTheme.Text.Light.Small"
+            app:layout_constraintStart_toStartOf="@id/two"
+            app:layout_constraintTop_toBottomOf="@id/char_image" />
+
+        <TextView
+            android:id="@+id/char_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/char_gender_placeholder"
+            style="@style/AppTheme.Text.Light.Small"
+            app:layout_constraintStart_toStartOf="@id/two"
+            app:layout_constraintTop_toBottomOf="@id/char_gender_label" />
+
+        <TextView
+            android:id="@+id/char_species_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/char_species_label"
+            style="@style/AppTheme.Text.Light.Small"
+            app:layout_constraintStart_toStartOf="@id/three"
+            app:layout_constraintTop_toBottomOf="@id/char_image" />
+
+        <TextView
+            android:id="@+id/char_species"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/char_species_placeholder"
+            style="@style/AppTheme.Text.Light.Small"
+            app:layout_constraintStart_toStartOf="@id/three"
+            app:layout_constraintTop_toBottomOf="@id/char_species_label" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize10Percent" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="AppTheme.Text.Sized.Small" parent="android:TextAppearance">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.Text.Sized.Normal" parent="android:TextAppearance">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppTheme.Text.Gray.Normal" parent="AppTheme.Text.Sized.Normal">
+        <item name="android:textColor">@color/textColorGrey</item>
+    </style>
+
+    <style name="AppTheme.Text.Light.Small" parent="AppTheme.Text.Sized.Small">
+        <item name="android:textColor">@color/textColorLight</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="AppTheme.Text.Light.Normal" parent="AppTheme.Text.Sized.Normal">
+        <item name="android:textColor">@color/textColorLight</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="AppTheme.Title.TextAppearance" parent="android:TextAppearance">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/textColorLight</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

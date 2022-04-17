@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/chars_list_fragment">
+
+    <fragment
+        android:id="@+id/chars_list_fragment"
+        android:name="com.example.rickmorty.presentation.chars_list.CharsListFragment"
+        android:label="CharsListFragment" >
+
+        <action
+            android:id="@+id/action_charsListFragment_to_charDetailsFragment"
+            app:destination="@id/char_details_fragment">
+            <argument
+                android:name="selectedChar"
+                app:argType="com.example.rickmorty.domain.models.Character"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/char_details_fragment"
+        android:name="com.example.rickmorty.presentation.char_details.CharDetailsFragment"
+        android:label="CharDetailsFragment" />
+</navigation>
