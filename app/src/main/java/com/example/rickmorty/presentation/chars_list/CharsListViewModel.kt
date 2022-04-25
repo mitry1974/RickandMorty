@@ -19,10 +19,11 @@ import javax.inject.Inject
 
 class CharsListViewModel @Inject constructor(private val charsListRepository: CharsListRepository) :
     ViewModel() {
+
     private val _error = MutableLiveData<String>()
     val error: LiveData<String> get() = _error
 
-    fun getCharacters(): Flow<PagingData<Character>> =
+    val flow: Flow<PagingData<Character>> =
         charsListRepository.getCharacters().map { pd ->
             pd.map { ResponseToChar.toVO(it) }
         }

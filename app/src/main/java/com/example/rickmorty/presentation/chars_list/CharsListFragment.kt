@@ -78,7 +78,7 @@ class CharsListFragment : Fragment() {
         }
         viewLifecycleOwner.lifecycleScope.launch {
 
-            viewModel?.getCharacters()?.collectLatest { chars ->
+            viewModel?.flow?.collectLatest { chars ->
                 adapter?.submitData(chars)
             }
         }

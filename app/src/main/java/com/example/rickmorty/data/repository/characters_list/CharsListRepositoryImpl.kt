@@ -12,13 +12,12 @@ import javax.inject.Inject
 class CharsListRepositoryImpl @Inject constructor(
     private val movieService: RAMService
 ) : CharsListRepository {
-    override fun getCharacters(): Flow<PagingData<CharacterResponse>> {
-        return Pager(
+    override fun getCharacters(): Flow<PagingData<CharacterResponse>> =
+         Pager(
             config = PagingConfig(pageSize = NETWORK_PAGE_SIZE, enablePlaceholders = false)
         ) {
             CharsPagingSource(service = movieService)
         }.flow
-    }
 
     companion object {
         const val NETWORK_PAGE_SIZE = 25
